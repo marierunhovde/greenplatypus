@@ -3,8 +3,7 @@ library(palmerpenguins)
 
 
 ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
-  labs(x = "Bill length (mm)", y = "Species") +
-  scale_color_viridis_d() + 
+  labs(x = "Bill length (mm)", y = "Species") + 
   geom_jitter() + 
   theme_bw()
 
